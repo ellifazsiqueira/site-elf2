@@ -1,0 +1,26 @@
+{
+  "name": "site-elf",
+  "homepage": "https://github.com/ellifazsiqueira/site-elf2",
+  "authors": [
+    "ellifazsiqueira <ellifaz.elf@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "bootstrap-sass": "^3.3.7",
+    "sass-flex-mixin": "^1.0.3",
+    "imagehover.css": "*",
+    "wow": "^1.1.2",
+    "breakpoint-sass": "^2.7.1"
+  }
+}
