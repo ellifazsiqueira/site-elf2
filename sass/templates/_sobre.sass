@@ -1,0 +1,90 @@
+@import organisms/habilidades
+body
+    background: 
+        image: url('../images/fundo-sobre.png')
+        position: top center
+        repeat: no-repeat
+        color: $preto
+        attachment: fixed
+        size: cover
+/* TODO: alterar a altura minima
+section.sobre
+    min-height: 420px
+    .container
+        float: left
+        display: block
+        margin: 15px
+        +make-sm-column(8)
+        +breakpoint($tablet)
+            +make-sm-column(12)
+        +breakpoint($celular)
+            +make-sm-column(12)
+        +breakpoint($fullhd)
+            +make-sm-column(7)
+        
+        .conteudo
+            h2
+                +font-size(25px)
+                font-weight: $bold
+                color: $azul
+                +breakpoint($fullhd)
+                    +font-size(40px)
+                
+            p
+                +font-size(25px)
+                color: $cinza-escuro
+                text-align: justify
+                +breakpoint($fullhd)
+                    +font-size(40px)
+                
+            ul
+                li
+                    +font-size(25px)
+                    color: $cinza-escuro
+                    +breakpoint($fullhd)
+                        +font-size(40px)
+                
+    .laterais
+        float: right
+        margin-top: 40px
+        .ativo
+            border: 2px solid $azul
+            padding: 15px 125px 25px 60px
+            border-radius: 60px 0 0 60px
+            background-color: $azul
+            margin-bottom: 20px
+            +breakpoint($fullhd)
+                padding: 30px 250px 50px 120px
+                border-radius: 120px 0 0 120px
+                margin-bottom: 40px
+            h1
+                +font-size(45px)
+                font-weight: $bold
+                color: $cinza-claro
+                +breakpoint($fullhd)
+                    +font-size(70px)
+            &:hover
+                border: 2px solid $azul
+                background-color: $azul
+        
+        .lateral
+            border: 2px solid $cinza-escuro
+            padding: 15px 125px 25px 60px
+            border-radius: 60px 0 0 60px
+            background-color: $cinza-escuro
+            margin-bottom: 20px
+            +breakpoint($fullhd)
+                padding: 30px 250px 50px 120px
+                border-radius: 120px 0 0 120px
+                margin-bottom: 40px
+            +transition(.5s)
+            h1
+                +font-size(45px)
+                font-weight: $bold
+                color: $cinza-claro
+                +breakpoint($fullhd)
+                    +font-size(70px)
+            &:hover
+                border: 2px solid $azul
+                background-color: $azul
+                background-color: $azul

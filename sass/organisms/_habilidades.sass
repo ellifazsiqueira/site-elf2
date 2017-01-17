@@ -1,0 +1,42 @@
+.habilidades
+    .clearfix
+    +make-sm-column(12)
+    
+    li
+        +make-sm-column(6)
+        
+        h2
+            font-size: 15px
+            margin: 30px 0 10px
+            +breakpoint($fullhd)
+                margin: 30px 0 80px
+            
+            i
+                font-size: 30px
+                
+                &.fa-html5
+                    color: $laranja
+                    
+                &.fa-css3
+                    color: $css
+                    
+                &.fa-wordpress
+                    color: #1A98E8
+                    
+    @for $i from 0 to 10
+        li.habilidade-#{$i}
+            .barra span
+                width: 10% * $i
+    .barra
+        background-color: $cinza-claro
+        +border-radius(120px)
+        display: block
+        width: 100%
+        height: 17px
+        margin: 10px 0
+        
+        span
+            display: block
+            height: 100%
+            +border-radius(120px)
+            +gradient(90deg, $azul, $css)

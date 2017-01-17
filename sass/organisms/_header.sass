@@ -1,0 +1,65 @@
+header
+    +clearfix
+    min-height: 90px
+    position: relative
+    border-bottom: 3px solid $azul
+    margin: 0 auto
+    background: rgba($preto, 0.3)
+    +breakpoint($fullhd)
+        min-height: 133px
+        border-bottom: 5px solid $azul
+
+    .logo-sup
+        float: left
+        width: 93px
+        height: 49px
+        margin: 20px 0 0 37px
+        +breakpoint($fullhd)
+            width: 133px
+            height: 70px
+            margin: 30px 0 0 50px
+        
+        img
+            width: 100%
+            height: 100%
+            
+    .links
+        float: right
+        margin: 35px 30px 0 0
+        +breakpoint($fullhd)
+            margin: 55px 55px 0 0
+        
+        nav
+            display: inline-block
+            
+            +breakpoint($celular)
+                display: none
+            +breakpoint($tablet)
+                display: none
+            
+            ul
+                li
+                    display: inline-block
+                    margin: 0 0 0 20px
+                    
+                    a
+                        color: $cinza
+                        text-transform: uppercase
+                        font-weight: $bold
+                        +font-size(22px)
+                        +breakpoint($fullhd)
+                            +font-size(30px)
+                        
+                        &:hover
+                            color: $azul
+                            &:after
+                                width: 100%
+                        
+                        &:after
+                            content: ""
+                            display: table
+                            margin: 5px auto 0
+                            width: 0%
+                            height: 2px
+                            background-color: $azul
+                            +transition(.3s)

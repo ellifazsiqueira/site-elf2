@@ -1,10 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Site ELF</title>
+    <title>Grupo ELF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+    <link rel="stylesheet" href="css/plugins.css">
 </head>
 <body>
-    
+    <!--Menu responsivo-->
+    <nav class="menu-responsivo">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Quem Somos</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <div class="sociais">
+            <div class="icone-behance">
+                <a href="#">
+                    <img src="images/icone-behance.png" alt="">
+                </a>
+            </div>
+            <div class="icone-twitter">
+                <a href="#">
+                    <img src="images/icone-twitter.png" alt="">
+                </a>
+            </div>
+            <div class="icone-facebook">
+                <a href="#">
+                    <img src="images/icone-facebook.png" alt="">
+                </a>
+            </div>
+            <div class="icone-instagram">
+                <a href="#">
+                    <img src="images/icone-instagram.png" alt="">
+                </a>
+            </div>
+            <div class="icone-dribbble">
+                <a href="#">
+                    <img src="images/icone-dribble.png" alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="layout">
+        <!-- Elementos do menu superior, menu responsivo e logo da ELF -->
+        <header>
+            <div class="logo-sup">
+                <img src="images/logo-superior.png" alt="Logo ELF na parte Superior">
+            </div>
+    <!--
+            <div class="telefones">
+                <i class="fa fa-phone"></i> 62 3095-4392
+                <i class="fa fa-whatsapp"></i> 62 9 9693-6229
+            </div>
+    -->
+            <div class="links">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Quem Somos</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <a class="toggle" href="javascript:;">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </header>
+        <!-- Elementos do centro da pagina: cabeçalhos, logo, botão de contato e etc -->
+        <main>
+            <section class="corpo">
+                <div class="container">
+                    <div class="logo-centro">
+                        <img src="images/logo.png" alt="Logo ELF centro">
+                    </div>
+                    <div class="texto">
+                        <h1>São os pequenos detalhes <br> que fazem grandes empresas.</h1>
+                        <br>
+                        <a href="sobre.html" class="botao medio">Saiba mais</a>
+                    </div>
+                    <div class="sociais">
+                        <div class="icone-behance">
+                            <a href="#">
+                                <img src="images/icone-behance.png" alt="">
+                            </a>
+                        </div>
+                        <div class="icone-twitter">
+                            <a href="#">
+                                <img src="images/icone-twitter.png" alt="">
+                            </a>
+                        </div>
+                        <div class="icone-facebook">
+                            <a href="#">
+                                <img src="images/icone-facebook.png" alt="">
+                            </a>
+                        </div>
+                        <div class="icone-instagram">
+                            <a href="#">
+                                <img src="images/icone-instagram.png" alt="">
+                            </a>
+                        </div>
+                        <div class="icone-dribbble">
+                            <a href="#">
+                                <img src="images/icone-dribble.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Redes sociais do rodapé -->
+        <footer>
+        </footer>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script>
+        $(function(){
+            $('.toggle').click(function(){
+                $('.layout').toggleClass('ativo');
+                $('.menu-responsivo').toggleClass('ativo');
+                $('.sociais').toggleClass('ativo');
+                $(this).toggleClass('ativo');
+            });
+            $('main').click(function(){
+                $('.layout').removeClass('ativo');
+                $('.menu-responsivo').removeClass('ativo');
+                $(this).removeClass('ativo');
+            })
+            new WOW().init();
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,90 @@
+section.corpo
+    .container
+        margin-top: 80px
+        +breakpoint($fullhd)
+            margin-top: 168px
+        text-align: center
+        
+        +breakpoint($tablet)
+            margin-top: 80px
+        +breakpoint($celular)
+            margin-top: 60px
+        .logo-centro
+            img
+                width: 116px
+                height: 116px
+                +breakpoint($fullhd)
+                    width: 180px
+                    height: 180px
+        .texto
+            margin-top: 40px
+            +breakpoint($fullhd)
+                margin-top: 62px
+            h1
+                color: $cinza
+                margin-bottom: 25px
+                +font-size(55px)
+                +breakpoint($fullhd)
+                    +font-size(70px)
+                    margin-bottom: 52px
+                +breakpoint($celular)
+                    +font-size(30px)
+                +breakpoint($tablet)
+                    +font-size(40px)
+        .sociais
+            +flexbox
+            +align-items(center)
+            +justify-content(space-around)
+            +make-sm-column(4)
+            +make-sm-column-offset(4)
+            
+            margin: 70px 0 20px 0
+            text-align: center
+            +breakpoint($fullhd)
+                +flexbox
+                +align-items(center)
+                +justify-content(space-around)
+                +make-sm-column(6)
+                +make-sm-column-offset(3)
+                margin: 110px 0 20px 0
+            
+            .icone-facebook
+                a
+                    img
+                        width: 50px
+                        height: 50px
+                        +breakpoint($fullhd)
+                            width: 75px
+                            height: 75px
+                        +opacity(0.7)
+                        +transition(.5s)
+                        &:hover
+                            +opacity(1)
+            .icone-twitter,
+            .icone-instagram
+                a
+                    img
+                        width: 45px
+                        height: 45px
+                        +breakpoint($fullhd)
+                            width: 65px
+                            height: 65px
+                        +opacity(0.7)
+                        +transition(.5s)
+                        &:hover
+                            +opacity(1)
+            .icone-dribbble,
+            .icone-behance
+                a
+                    img
+                        width: 35px
+                        height: 35px
+                        +breakpoint($fullhd)
+                            width: 60px
+                            height: 60px
+                        +opacity(0.7)
+                        +transition(.5s)
+                        &:hover
+                            +opacity(1)
+            &.ativo
+                display: none

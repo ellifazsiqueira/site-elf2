@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Grupo ELF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+    <link rel="stylesheet" href="css/plugins.css">
+</head>
+<body>
+    <!--Menu responsivo-->
+    <nav class="menu-responsivo">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Quem Somos</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <div class="sociais">
+            <div class="icone-behance">
+                <a href="#">
+                    <img src="images/icone-behance.png" alt="">
+                </a>
+            </div>
+            <div class="icone-twitter">
+                <a href="#">
+                    <img src="images/icone-twitter.png" alt="">
+                </a>
+            </div>
+            <div class="icone-facebook">
+                <a href="#">
+                    <img src="images/icone-facebook.png" alt="">
+                </a>
+            </div>
+            <div class="icone-instagram">
+                <a href="#">
+                    <img src="images/icone-instagram.png" alt="">
+                </a>
+            </div>
+            <div class="icone-dribbble">
+                <a href="#">
+                    <img src="images/icone-dribble.png" alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="layout">
+        <!-- Elementos do menu superior, menu responsivo e logo da ELF -->
+        <header>
+            <div class="logo-sup">
+                <img src="images/logo-superior.png" alt="Logo ELF na parte Superior">
+            </div>
+    <!--
+            <div class="telefones">
+                <i class="fa fa-phone"></i> 62 3095-4392
+                <i class="fa fa-whatsapp"></i> 62 9 9693-6229
+            </div>
+    -->
+            <div class="links">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Quem Somos</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <a class="toggle" href="javascript:;">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </header>
+        <!-- Elementos do centro da pagina: cabeçalhos, logo, botão de contato e etc -->
+        <main>
+            <section class="sobre">
+                <div class="container">
+                    <div class="conteudo">
+                        <h2>Missão</h2>
+                        <p>Gerar soluções na area de Web Design e Marketing Digital que agreguem valor às empresas de nossos clientes, tornando-as mais produtivas, atraentes e preparadas para o mundo digital. Nosso papel não é apenas o de fornecer ferramentas e meios para conseguir resultados, mas o de dar a sua marca a visibilidade e a tecnologia que ela precisa para ficar em destaque no mercado.</p>
+                        <h2>Visão</h2>
+                        <p>Ser reconhecida como a maior referência no mercado de Web Design de Goiás, principalmente nos quesitos compromisso e criatividade.</p>
+                        <h2>Valores</h2>
+                        <ul>
+                            <li>&bull; Profissionalismo</li>
+                            <li>&bull; Comprometimento</li>
+                            <li>&bull; Ética</li>
+                            <li>&bull; Criatividade</li>
+                            <li>&bull; Exclusividade</li>
+                            <li>&bull; Segurança</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="laterais">
+                    <a href="sobre.html">
+                        <div class="lateral">
+                            <h1>A Empresa</h1>
+                        </div>
+                    </a>
+                    <br>
+                    <a href="experiencia.html">
+                        <div class="lateral">
+                            <h1>Experiência</h1>
+                        </div>
+                    </a>
+                    <br>
+                    <a href="bandeiras.html">
+                        <div class="ativo">
+                            <h1>Bandeiras</h1>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="rodape">
+                <div class="container">
+                    <div class="logo-rodape">
+                        <a href="index.html">
+                            <img src="images/logo-superior.png" alt="Logo ELF do Rodapé">
+                        </a>
+                    </div>
+                    <p>2017 Todos os Direitos Reservados</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script>
+        $(function(){
+            $('.toggle').click(function(){
+                $('section.sobre').toggleClass('ativo');
+                $('.menu-responsivo').toggleClass('ativo');
+                $('.rodape').toogleClass('ativo');
+                $('.sociais').toggleClass('ativo');
+                $(this).toggleClass('ativo');
+            });
+            $('main').click(function(){
+                $('.layout').removeClass('ativo');
+                $('.menu-responsivo').removeClass('ativo');
+                $(this).removeClass('ativo');
+            })
+            new WOW().init();
+        });
+    </script>
+</body>
+</html>
